@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1614005856 source:c:\2021 studia\programowanie strukturalne\lab2\1_3_2\main.c
+	<stdio.h>
+	<stdlib.h>
+
