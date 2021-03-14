@@ -16,7 +16,7 @@ int main()
         printf("%f\n%f", x, y);
     } else {
         if (W==0 && WX==0 && WY==0) {
-    printf("endless solutions\n");
+    printf("infinitely many solutions\n");
     } else {
     printf("no solution, W is 0");
     }
