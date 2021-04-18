@@ -43,13 +43,13 @@ void funkcja_a(unsigned int n, int tab1[]){
 
 void funkcja_b(unsigned int n, int tab1[]){
 
-    int temp = tab1[0];
-    for(int i=0;i+1<n;i++)
+    int temp = tab1[0]; //pierwszy element tablicy zapisujemy do zmiennej tymczasowej, bo elementu pierwszego nie mozemy przesunac w lewo
+    for(int i=0;i+1<n;i++) //elementy po pierwszym dzięki pętli przesuwamy o 1 w lewo
     {
         tab1[i]=tab1[i+1];
 
     }
-        tab1[n-1]=temp;
+        tab1[n-1]=temp;  //ustawiamy element n-1 na ten pierwszy element, który wcześniej zapisaliśmy w zmiennej tymczasowej, czyli pierwszy
 
 
 }
@@ -57,7 +57,7 @@ void funkcja_b(unsigned int n, int tab1[]){
 void funkcja_c(unsigned int n, int tab1[]){
 
     int temp = tab1[n-1];
-    for(int i=n-2;i>=0;i--)
+    for(int i=n-2;i>=0;i--)  //to samo co wyzej, trzeba do zmiennej tymczasowej ustawic, bo pierwszego elementu nie mozemy przesunac w lewo, a ostatniego nie mozemy przesunac w prawo, bo tam nic nie ma
     {
         tab1[i+1]=tab1[i];
 
@@ -110,12 +110,12 @@ int main()
     funkcja_a(n, tab1);
     print(n, tab1);
     printf("\n");
-    //przesuniecie w lewo ju� po odwr�ceniu tablicy
+    //przesuniecie w lewo ju¿ po odwróceniu tablicy
     printf("tab1 after reversion and then left shift : \n");
     funkcja_b(n, tab1);
     print(n, tab1);
     printf("\n");
-    //przesuniecie w prawo juz po przesunieciu w lewo i odwr�ceniu tablicy
+    //przesuniecie w prawo juz po przesunieciu w lewo i odwróceniu tablicy
     printf("tab1 after reversion and then left shift and then right shift : \n");
     funkcja_c(n, tab1);
     print(n, tab1);
