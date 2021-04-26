@@ -3,16 +3,19 @@
 #include <math.h>
 
 int potega(int n, int m){
+
     int potega=1;
-if(n==0 && m==0)return 0;
-if(n==0 && m<0)return NAN;
+    if(n==0 && m==0)
+        return 0;
+    if(n==0 && m<0)
+    return NAN;
 
-for(int i=0;i<m;i++){ //SLOWO KLUCZOWE RETURN -- IF SIE KONCZY W MOMENCIE WIEC RETURNA.
-    potega=potega*n;
+    for(int i=0;i<m;i++)
+    {                           //SLOWO KLUCZOWE RETURN -- IF SIE KONCZY W MOMENCIE WIEC RETURNA.
+        potega=potega*n;
+    }
+    return potega;
 
-}
-
-return potega;
 }
 
 int main()

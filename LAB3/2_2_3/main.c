@@ -5,12 +5,13 @@
 
 int najwiekszy_dzielnik(int n){
 
-if(n>2)
-for(int i=n-1;i<n;--i){
-    if(n%i==0)return i;
-}
+    if(n>2)
+        for(int i=n-1;i<n;--i)
+        {
+            if(n%i==0)return i;
+        }
 
-}
+    }
 
 
 
@@ -18,9 +19,9 @@ int main()
 {
 
 
-int x;
-scanf("%d", &x);
-printf("Najwiekszy dzielnik podanej liczby bedacy mniejszy od tej liczby to : %d", najwiekszy_dzielnik(x) );
+    int x;
+    scanf("%d", &x);
+    printf("Najwiekszy dzielnik podanej liczby bedacy mniejszy od tej liczby to : %d", najwiekszy_dzielnik(x) );
 
 
 

@@ -31,12 +31,11 @@ int suma_m(int n, int m){
 
     int suma=0;
 
-    for(int i=0; pierwiastek_m(i,m)<=n;i++){
-        suma=suma+i;
-
+    for(int i=0; i<=n;i++)
+    {
+        suma=suma+pierwiastek_m(i,m);
 
     }
-
     return suma;
 }
 
