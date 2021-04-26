@@ -66,7 +66,7 @@ void funkcja_c(unsigned int n, int tab1[]){
 
 
 }
-//yet to be done
+
 int funkcja_d1(unsigned int n, int tab1[]){
 
     int i=0;

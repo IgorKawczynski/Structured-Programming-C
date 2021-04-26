@@ -31,7 +31,7 @@ int Eratostenes(int n){
 
 int main()
 {
-    int n=17;
+    int n=26;
     int tab[n];
     printf("%d", Eratostenes(n));
 
