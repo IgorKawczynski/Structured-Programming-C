@@ -4,7 +4,7 @@
 //CHAR
 int compare(char* napis1, char* napis2){
 
-    for(int i=0; *(napis1+i)!='\0'; i++)    //ewentualnie for(int i=0; *(napis1+i)!='\0' && *(napis2+i)!='\0'; i++)
+    for(int i=0; *(napis1+i)!='\0'; i++)    //ewentualnie for(int i=0; *(napis1+i)!='\0' && *(napis2+i)!='\0'; i++) 
     {                                    
         if(napis1[i]!=napis2[i])
             return 0;
