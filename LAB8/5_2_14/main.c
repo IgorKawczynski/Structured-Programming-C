@@ -21,9 +21,9 @@ void foo2(wchar_t *napis){
 int main()
 {
 
-    char napis1[]="abcWERT";
+    char napis1[]="abcsWERT";
     foo1(napis1);
-    wchar_t napis2[]=L"abcWERT";
+    wchar_t napis2[]=L"abcsWERT";
     foo2(napis2);
 
 

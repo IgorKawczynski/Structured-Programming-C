@@ -1,0 +1,24 @@
+FUNKCJE OGÓLNIE : 
+https://www.fuw.edu.pl/~werner/pmn/CPP_HTML/CPP_files/node117.html
+https://en.cppreference.com/w/c/string/byte
+(+dla wchar_t : https://en.cppreference.com/w/c/string/wide)
+
+FUNKCJE SZCZEGÓŁOWO :
+https://www.techiedelight.com/implement-strcpy-function-c/
+https://www.techiedelight.com/implement-strncpy-function-c/
+https://www.techiedelight.com/implement-strcat-function-c/
+https://www.techiedelight.com/implement-strncat-function-c/
+https://www.techiedelight.com/implement-strcmp-function-c/
+https://www.techiedelight.com/implement-itoa-function-in-c/
+https://www.techiedelight.com/implement-substring-function-c/
+https://www.techiedelight.com/implement-strstr-function-c-iterative-recursive/
+https://www.geeksforgeeks.org/write-memcpy/
+
+GETS I PUTS() : 
+https://www.javatpoint.com/c-gets-puts
+
+TABLICE NAPISOW I INNA TEORIA : 
+https://edu.pjwstk.edu.pl/wyklady/pro/scb/PRG2CPP_files/node27.html
+
+
+ 

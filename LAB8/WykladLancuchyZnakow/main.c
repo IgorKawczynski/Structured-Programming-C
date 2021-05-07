@@ -64,6 +64,13 @@ int main()
     printf("%s\n", slowo2);
     puts(slowo2);
 
+    //char napis1[30]; //tutaj mozna 30 znaku rysowac, spacja opcjonalna
+
+    //char *napis1="aj"; //tak tez nie mozna bo w tym wypadku zmienna wskaznikowa jest tylko do odczytu, nie mozna wpisac scanfa // niezainicjowany wskaznik, nie wie w ktore miejsce w pamieci ma trafic
+
+    //char *napis=malloc(30*sizeof(char)); //zainicjalizowalismy wskaznik,
+
+
     //dodaje koniec linii na koncu napisu o ile nie wype³niliœmy rozmiaru, opcja bezpieczniejsza od gets, uzytkow
     char slowo3[10];
     fgets(slowo3, 5, stdin);
