@@ -4,8 +4,8 @@
 //CHAR
 int compare(char* napis1, char* napis2){
 
-    for(int i=0; *(napis1+i)!='\0'; i++)  //napis1[i] lub napis2[i] != '\0', oba musza byc rowne wiec nie ma znaczenia
-    {                                     //ewentualnie for(int i=0; *(napis1+i)!='\0' && *(napis2+i)!='\0'; i++)
+    for(int i=0; *(napis1+i)!='\0'; i++)    //ewentualnie for(int i=0; *(napis1+i)!='\0' && *(napis2+i)!='\0'; i++) 
+    {                                    
         if(napis1[i]!=napis2[i])
             return 0;
     }
@@ -16,7 +16,7 @@ int compare(char* napis1, char* napis2){
 //WCHAR_t
 int w_compare(wchar_t* napis1, wchar_t* napis2){
 
-    for(int i=0; *(napis1+i)!=L'\0'; i++)  //napis1[i] lub napis2[i] != L'\0', dlugosci obu musza byc rowne wiec nie ma znaczenia
+    for(int i=0; *(napis1+i)!=L'\0'; i++)  
     {
         if(napis1[i]!=napis2[i])
             return 0;
