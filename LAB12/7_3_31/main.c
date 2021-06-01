@@ -117,6 +117,22 @@ struct element* Lista_bez_Glowy_odwroc(struct element*Lista)
     return temp1;
 };
 
+void odwroc(struct element*Lista)
+{
+    struct element* temp1;
+    struct element* temp2;
+    if(Lista->next)
+    {
+        temp2=Lista->next;
+        while(temp2->next)
+        {
+            temp1=temp2->next;
+            temp2->next=temp1->next;
+            temp1->next=Lista->next;
+            Lista->next=temp1;
+        }
+    }
+}
 
 int main()
 {
@@ -139,9 +155,9 @@ int main()
     printf("ODWROCONA LISTA1 : \n");
     lista1=Lista_bez_Glowy_odwroc(lista1);
     Lista_bez_Glowy_wyswietl(lista1);
-//    printf("ODWROCONA LISTA2 : \n");
-//    odwroc(&lista2);
-//    Lista_z_Glowa_wyswietl(lista2);
+    printf("ODWROCONA LISTA2 : \n");
+    odwroc(lista2);
+    Lista_z_Glowa_wyswietl(lista2);
 
     return 0;
 }

@@ -53,7 +53,6 @@ void Lista_bez_Glowy_wyswietl(struct element*Lista)
 }
 
 
-
 struct element* Lista_z_Glowa_utworz()
 {
     struct element*temp=malloc(sizeof(struct element));
@@ -96,7 +95,7 @@ void Lista_z_Glowa_wyswietl(struct element*Lista)
 struct element* Lista_bez_Glowy_przesun(struct element*Lista)
 {
     struct element* temp=Lista;
-    if( (Lista==NULL) || (Lista->next==NULL) )
+    if( (Lista->next==NULL) || (Lista->next->next==NULL) )
         return Lista;
 
     while(Lista->next->next!=NULL)
@@ -105,7 +104,7 @@ struct element* Lista_bez_Glowy_przesun(struct element*Lista)
     }
     Lista->next->next=temp;
     temp=Lista->next;
-    Lista->next=NULL; //zakoczenie listy
+    Lista->next=NULL; //zakonczenie listy
     return temp;
 
 };
@@ -146,12 +145,11 @@ int main()
 
     struct element* lista4=Lista_z_Glowa_utworz();
     Lista_z_Glowa_dodajk(lista4, 3);
-    Lista_z_Glowa_dodajk(lista4, 25);
-    Lista_z_Glowa_dodajk(lista4, 43);
-    Lista_z_Glowa_dodajk(lista4, 3);
-    Lista_z_Glowa_dodajk(lista4, -2);
+    Lista_z_Glowa_dodajk(lista4, 4);
+    Lista_z_Glowa_dodajk(lista4, 5);
+    Lista_z_Glowa_dodajk(lista4, 2);
     Lista_z_Glowa_dodajk(lista4, 66);
-    Lista_z_Glowa_wyswietl(lista4);
+
 
     struct element* lista6=Lista_z_Glowa_przesun(lista4);
     Lista_bez_Glowy_wyswietl(lista6);
