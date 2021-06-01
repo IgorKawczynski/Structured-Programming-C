@@ -1,0 +1,47 @@
+---
+title: "Zestaw K1"
+lang: pl
+output:
+  pdf_document: default
+  word_document: default
+---
+
+
+1. W folderze DebugN1 znajduje się projekt z kodem w języku C. W pliku main.c w niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek i instrukcji poza komentarzami będzie powodowało 0 pkt. Adresy muszą obowiązkowo być w systemie szesnastkowym.
+
+*Punktacja: 7 pkt.*
+
+2. Napisz funkcję, której argumentem jest napis. Funkcja ma zadanie usunąć znaki z napisu o nieparzystych indeksach. Stwórz przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+Przykład: dla napisu `abc123` ma pozostać `ac2`.
+
+3. Napisz funkcję, której argumentem jest dwuwymiarowa tablica tablic i jej wymiary $n$ i $m$. Funkcja ma zwrócić wskaźnik na element w ostatnim wierszu i kolumnie o indeksie 2 (jeśli taki element nie istnieje, funkcja ma zwrócić null). Stwórz przypadek testowy prezentujący wartość przechowywaną na adresie zwróconym przez funkcję.
+
+*Punktacja: 12 pkt.*
+
+4. Dane są następujące wyrazy i znaki:
+
+```
+int int int float float int fun f2 f1 a b c ( ) ( ) ( )  ( ) ( ) , , * *
+```
+
+Ułóż je we właściwej kolejności, aby otrzymać nagłówek funkcji fun, która dostaje jako argumenty dwa wskaźniki na funkcję i liczbę całkowitą i zwraca liczbę całkowitą.
+ Następnie dodaj dowolną implementację funkcji i stwórz dla niej przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+5. Napisz rekurencyjną funkcję, która otrzymuje jako argumenty listę z głową o elementach typu:
+
+```c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+i zwraca iloczyn elementów na liście. Stwórz jeden przypadek testowy. Może uprosić zadanaie i w przypadku pustej listy zwrócić 1.
+
+
+*Punktacja: 15 pkt. Funkcja nierekurencyjna - max 10 pkt.*

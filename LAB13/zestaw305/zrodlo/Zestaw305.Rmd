@@ -1,0 +1,47 @@
+---
+title: "Zestaw 305"
+lang: pl
+output:
+  word_document: default
+  pdf_document: default
+---
+
+
+1. W folderze Debug305 znajduje się projekt z kodem w języku C. W pliku main.c w niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek i instrukcji poza komentarzami będzie powodowało 0 pkt. Adresy muszą obowiązkowo być w systemie szesnastkowym.
+
+*Punktacja: 7 pkt.*
+
+2. Napisz funkcję, która dostaje w argumencie napis. Funkcja ma zwrócić znak, będący dużą literą, który występuje w napisie jako pierwszy od prawej. Jeśli napis nie zawiera dużych liter, funkcja ma zwrócić znak zerowy. Stwórz przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+Przykład: Dla napisu `"WERht23"` funkcja ma zwrócić znak `'R'`. Dla napisu `"877773"` funkcja ma zwrócić znak `'\0'`. Stwórz przypadek testowy.
+
+3. Napisz funkcję, która dostaje jako argumenty tablicę dwuwymiarową o elementach będącymi liczbami zmiennoprzecinkowymi oraz jej wymiary, i odwraca kolejność elementów we wierszach otrzymanej tablicy o nieparzystych indeksach. Stwórz przypadek testowy dla funkcji. 
+
+*Punktacja: 12 pkt.*
+
+4. Dane są następujące wyrazy i znaki:
+
+```
+fun float int int ( ) [ ] [ ] ** tab tab2 5 ,
+```
+
+Ułóż je we właściwej kolejności, aby otrzymać nagłówek funkcji fun, która dostaje jako dwuwymiarową tablicę tablic liczb stałoprzecinkowych oraz dwuwymiarową tablicę elementów liczb stałoprzecinkowych wymiaru 5x5. 
+ Następnie dodaj dowolną implementację funkcji i stwórz dla niej przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+5. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+```c
+struct element {
+    double x;
+    struct element * next;
+};
+```
+
+Funkcja ma za zadanie usunąć z listy wszystkie elementy ujemne. Stwórz jeden przypadek testowy.
+
+
+*Punktacja: 15 pkt.*

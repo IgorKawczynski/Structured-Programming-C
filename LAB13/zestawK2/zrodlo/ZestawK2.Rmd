@@ -1,0 +1,48 @@
+---
+title: "Zestaw K2"
+lang: pl
+output:
+  pdf_document: default
+  word_document: default
+---
+
+
+1. W folderze DebugN2 znajduje się projekt z kodem w języku C. W pliku main.c w niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek i instrukcji poza komentarzami będzie powodowało 0 pkt. Adresy muszą obowiązkowo być w systemie szesnastkowym.
+
+*Punktacja: 7 pkt.*
+
+2. Napisz funkcję, która dostaje w argumencie dwa napisy i liczbę całkowitą `n`. Funkcja ma zwrócić 1 jeśli znak o indeksie `n` w pierwszym napisie jest wcześniej w tablicy ASCII niż znak o indeksie `n` w drugim napisie. W przeciwnym wypadku albo gdy któryś z napisów jest krótszy, to funkcja ma zwrócić 0. W zadaniu nie korzystaj z funkcji bibliotecznych. Stwórz przypadek testowy.
+
+*Punktacja: 8 pkt.*
+
+3. Napisz funkcję, której argumentem jest dwuwymiarowa tablica tablic i jej wymiary $n$ i $m$. Funkcja ma zwrócić sumę elementów znajdujących się na przekątnych tablicy. Stwórz przypadek testowy.
+
+Przykład: dla poniższej tablicy ma wyjść: $2+8+(-2)+8+(-4)+5=\ldots$
+
+| | | | |
+|---|---|---|---|
+| 2 | 3| -2 | 8 |
+| -1 | 8 | -4 | 3|
+| 3| 5| -2 | -9 |
+
+
+*Punktacja: 10 pkt.*
+
+4. Stwórz strukturę `Uczen` o dwóch polach `imie` (napis) oraz wiek (`dowolny typ całkowity`). Następnie stwórz funkcję, której argumentami jest tablica struktur `Uczen` oraz rozmiar tablicy. Funkcja ma zwrócić liczbę znaków najdłuższego imienia z tablicy. Stwórz przypadek testowy.
+
+
+*Punktacja: 10 pkt.*
+
+5. Napisz funkcję, która porównuje dwie listy bez głowy o elementach typu:
+
+```c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+i zwraca 1 jeśli maksimum na obu listach jest równe oraz 0 w pozostałych przypadkach. Stwórz jeden przypadek testowy.
+
+
+*Punktacja: 15 pkt.*
